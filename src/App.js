@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Tooltip from "./Tooltip.js";
+import { useState } from "react";
+import styles from "./App.module.css";
 
 function App() {
+  const [isHidden, setIsHidden] = useState(true);
+
+  function handleIn() {
+    setIsHidden(false);
+  }
+
+  function handleOut() {
+    setIsHidden(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <button
+        className={styles.btn}
+        onMouseEnter={handleIn}
+        onMouseLeave={handleOut}
+      >
+        Hover over me!
+      </button>
+      {isHidden || <Tooltip position="right" />}
     </div>
   );
 }

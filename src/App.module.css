@@ -1,0 +1,20 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn {
+  padding: 5px 15px;
+  color: white;
+  background: rgb(33, 118, 33);
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 1px;
+}
+
+.btn:hover {
+  background: rgb(9, 87, 9);
+  cursor: pointer;
+}

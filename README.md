@@ -1,3 +1,11 @@
+# ToolTip Component
+
+A simple tooltip component developed with React.
+The tooltip will appear when the user hover over the button.
+It receives a prop called 'property' which will decide the position of the tooltip.
+
+Try it [here](https://tooltip-abidul.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

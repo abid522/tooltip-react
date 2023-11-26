@@ -1,0 +1,48 @@
+.tooltip {
+  height: 23px;
+  width: 239px;
+  padding: 6px;
+  background-color: black;
+  color: #fff;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -128px;
+}
+
+.top {
+  left: 50%;
+  bottom: 119%;
+}
+
+.bottom {
+  left: 50%;
+  bottom: -109%;
+}
+
+.left {
+  left: -75%;
+  bottom: 0%;
+}
+
+.right {
+  left: 178%;
+  bottom: 0%;
+}
+
+@media (max-width: 768px) {
+  /* LEFT */
+  .left {
+    font-size: xx-small;
+    width: 84px;
+    left: 14%;
+    bottom: 0%;
+  }
+  /* RIGHT */
+  .right {
+    font-size: xx-small;
+    width: 84px;
+    left: 178%;
+    bottom: 0%;
+  }
+}
